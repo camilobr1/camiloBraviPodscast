@@ -1,0 +1,41 @@
+.inicio{
+    
+    .titulo{
+        color: 060A24;
+        font-family: 'ibm plex sans' ;
+        line-height: 42px;
+        font-size: 36px;
+        padding: 29px 0px 0px 16px ;
+
+    }
+    .parrafo_titular{
+        padding: 29px 0px 0px 16px ;
+        color: 060A24;
+        font-family: 'ibm plex mono' ;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    button{
+        
+        background-color: #00F3BB;
+        color: 060A24;
+        font-family: 'ibm plex mono' ;
+        font-size: 16px;
+        border: none;
+        padding: 0px;
+        margin: 29px 16px 20px 16px ;
+        width: 288px;
+        height: 48px;
+        
+        &:hover{
+            background: rgb(0,240,184);
+            background: linear-gradient(90deg, rgba(0,240,184,1) 0%, rgba(0,0,254,1) 100%);
+            color: white;
+        }
+
+        
+
+
+    }
+}

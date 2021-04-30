@@ -1,0 +1,44 @@
+
+.items_menu{
+     background-color: blue;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    font-family: 'ibm plex mono';
+    margin-top: 44px;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 16px;
+        
+               
+        li{
+            list-style: none;
+            
+
+            a{
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    color: #00F3BB;
+                    text-decoration: line-through;
+                }
+                &:active{
+                    color: #060A24 ;
+                    opacity: 56%;
+                }
+
+
+                
+            }
+            
+            
+        }
+    }
+    
+
+
+}
