@@ -8,19 +8,37 @@
 header {
   background-color: white;
   width: 100%;
-  height: 44px;
+  height: 14vw;
+  max-height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
-header .logo {
-  padding: 10px 0px 10px 16px;
+header img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 8vw;
+  height: 8vw;
+  max-width: 36px;
+  min-width: 36px;
+  margin-left: 6vw;
 }
 
 header #checkbox {
@@ -31,7 +49,17 @@ header .fa-bars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px 16px 10px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 8vw;
+  height: 8vw;
+  max-width: 36px;
+  min-width: 36px;
+  margin-right: 6vw;
 }
 
 header input:checked ~ .fa-bars {
@@ -46,14 +74,50 @@ header input:checked ~ .fa-times {
   display: block;
 }
 
-header nav {
-  opacity: 0%;
-  height: 0%;
-}
-
-header input:checked ~ nav {
+header input:checked ~ ul {
   opacity: 100%;
   height: 224px;
+}
+
+@media screen and (min-width: 500px) {
+  header .fa-bars {
+    display: none;
+  }
+  header ul {
+    opacity: 100%;
+    width: 80%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    margin: 0px 0px 0px 15%;
+    padding: 0%;
+  }
+  header ul li a {
+    text-decoration: none;
+    color: #06240a;
+    margin: 10px 10px 10px 10px;
+    font-size: 1rem;
+  }
+  header ul li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  header ul li a:active {
+    color: #060A24;
+    opacity: 56%;
+  }
 }
 
 .episodios {
@@ -76,7 +140,7 @@ header input:checked ~ nav {
   color: 060A24;
   font-family: 'ibm plex sans';
   line-height: 42px;
-  font-size: 36px;
+  font-size: 2rem;
   padding: 29px 0px 0px 16px;
 }
 
@@ -84,7 +148,7 @@ header input:checked ~ nav {
   padding: 29px 0px 0px 16px;
   color: 060A24;
   font-family: 'ibm plex mono';
-  font-size: 14px;
+  font-size: 1rem;
   letter-spacing: 0;
   line-height: 22px;
 }
@@ -93,7 +157,7 @@ header input:checked ~ nav {
   background-color: #00F3BB;
   color: 060A24;
   font-family: 'ibm plex mono';
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   padding: 0px;
   margin: 29px 16px 20px 16px;
@@ -106,6 +170,15 @@ header input:checked ~ nav {
   background: -webkit-gradient(linear, left top, right top, from(#00f0b8), to(#0000fe));
   background: linear-gradient(90deg, #00f0b8 0%, #0000fe 100%);
   color: white;
+}
+
+@media screen and (min-width: 500px) {
+  .inicio {
+    margin: 4vw 0px 0px 14vw;
+  }
+  .inicio .titulo {
+    font-size: 4rem;
+  }
 }
 
 .de_donde_venimos {
@@ -236,18 +309,14 @@ footer .redes {
   color: white;
 }
 
-.items_menu {
+ul {
   background-color: blue;
   width: 100%;
+  height: 0%;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-family: 'ibm plex mono';
-  margin-top: 44px;
-}
-
-.items_menu ul {
+  margin-top: 134px;
+  opacity: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,24 +327,24 @@ footer .redes {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-left: 16px;
+  padding-left: 5vw;
 }
 
-.items_menu ul li {
+ul li {
   list-style: none;
 }
 
-.items_menu ul li a {
+ul li a {
   text-decoration: none;
   color: white;
 }
 
-.items_menu ul li a:hover {
+ul li a:hover {
   color: #00F3BB;
   text-decoration: line-through;
 }
 
-.items_menu ul li a:active {
+ul li a:active {
   color: #060A24;
   opacity: 56%;
 }

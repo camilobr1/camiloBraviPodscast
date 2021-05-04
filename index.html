@@ -16,22 +16,18 @@
     ------------------------------------------------------------------------------------------->
 
 <header>
-    <div class="logo">
-        <img src="./iconos/logo.svg" alt="logo">
-    </div>
-    <div>
-    <label for="checkbox"><i class="fas fa-bars" id="barra"></i></label>
+    <img src="./iconos/logo.svg" alt="logo">
+   
     <i class="fas fa-times"></i>
-    </div>
-    <input type="checkbox" id="checkbox" name="checkbox">
-    <nav class="items_menu">    
-        <ul>
-            <li><a href="#">EPISODIOS</a></li>
-            <li><a href="#">NOSOTROS</a></li>
-            <li><a href="#">ENTREVISTAS</a></li>
-            <li><a href="#">TÓPICOS</a></li> 
-        </ul>
-    </nav> 
+    <input type="checkbox" id="checkbox" name="checkbox">   
+    <label for="checkbox"><i class="fas fa-bars" id="barra"></i></label>
+    <ul class="items_menu">
+        <li><a href="#episodios">EPISODIOS</a></li>
+        <li><a href="#nosotros">NOSOTROS</a></li>
+        <li><a href="#entrevistas">ENTREVISTAS</a></li>
+        <li><a href="#topicos">TÓPICOS</a></li> 
+    </ul>
+     
  </header>
         
 
@@ -56,7 +52,7 @@
     <!-----------------------------------------------------------------------------------------
                                 INICIO DE EPISODIOS
     ------------------------------------------------------------------------------------------->
-    <article class="episodios">
+    <article class="episodios" id="episodios">
         <h1>Episodios</h1>
         <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -70,7 +66,7 @@
      <!-----------------------------------------------------------------------------------------
                                 INICIO DE DE DONDE VENIMOS
     ------------------------------------------------------------------------------------------->
-    <article class="de_donde_venimos">
+    <article class="de_donde_venimos" id="nosotros">
         <img src="./imagenes/phone.png" alt="phone">
         <h1>De dónde venimos</h1>
         <p>Our posturing, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
@@ -86,7 +82,7 @@
         <!-----------------------------------------------------------------------------------------
                                 INICIO DE INVITADOS ESTELARES
     ------------------------------------------------------------------------------------------->
-    <article class="invitados">
+    <article class="invitados" id="entrevistas">
         <h1>Invitadas/os estelares</h1>
         <img src="./imagenes/grace-hopper.png" alt="img">
         <img src="./imagenes/Katie-Bouman.png" alt="img">
@@ -102,7 +98,7 @@
                                 INICIO DE ALGUNOS DE NUESTROS TEMAS
     ------------------------------------------------------------------------------------------->
 
-    <article class="temas">
+    <article class="temas" id="topicos">
         <h1>Algunos de nuestros temas</h1>
             <img src="./iconos/icon1.svg" alt="icono">
             <h2> <strong>Trabajo remoto</strong></h2>

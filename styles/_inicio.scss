@@ -4,7 +4,7 @@
         color: 060A24;
         font-family: 'ibm plex sans' ;
         line-height: 42px;
-        font-size: 36px;
+        font-size: 2rem;
         padding: 29px 0px 0px 16px ;
 
     }
@@ -12,7 +12,7 @@
         padding: 29px 0px 0px 16px ;
         color: 060A24;
         font-family: 'ibm plex mono' ;
-        font-size: 14px;
+        font-size: 1rem;
         letter-spacing: 0;
         line-height: 22px;
     }
@@ -21,7 +21,7 @@
         background-color: #00F3BB;
         color: 060A24;
         font-family: 'ibm plex mono' ;
-        font-size: 16px;
+        font-size: 1rem;
         border: none;
         padding: 0px;
         margin: 29px 16px 20px 16px ;
@@ -33,9 +33,12 @@
             background: linear-gradient(90deg, rgba(0,240,184,1) 0%, rgba(0,0,254,1) 100%);
             color: white;
         }
+    }
+    @media screen and (min-width: 500px){
+        margin: 4vw 0px 0px 14vw;
+        .titulo{
+            font-size: 4rem;
 
-        
-
-
+        }
     }
 }
