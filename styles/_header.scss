@@ -1,6 +1,5 @@
 *{  margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;    
 }
 
 header{
@@ -19,16 +18,16 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
-            width: 8vw;
-            height: 8vw;
-            max-width: 36px;
-            min-width: 36px;
+        width: 8vw;
+        height: 8vw;
+        max-width: 36px;
+        min-width: 36px;
         margin-left: 6vw;
-        
-        }
+    }
     
     #checkbox{
-            display: none;}
+            display: none;
+        }
 
     .fa-bars{
         display: flex;
@@ -39,8 +38,8 @@ header{
         max-width: 36px;
         min-width: 36px;
         margin-right: 6vw;
-
     }
+    
     input:checked ~ .fa-bars{
         display: none;
     }

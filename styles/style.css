@@ -172,6 +172,7 @@ header input:checked ~ ul {
   line-height: 42px;
   font-size: 2rem;
   padding: 29px 0px 0px 16px;
+  width: 70%;
 }
 
 .inicio .parrafo_titular {
