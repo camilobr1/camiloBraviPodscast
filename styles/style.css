@@ -123,17 +123,46 @@ header input:checked ~ ul {
 .episodios {
   width: 100%;
   background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 96%, 0 100%);
-          clip-path: polygon(0 3%, 100% 0%, 100% 96%, 0 100%);
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 96%, 0 100%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 96%, 0 100%);
   padding-bottom: 150px;
 }
 
 .episodios h1 {
   color: white;
   font-family: 'ibm plex sans';
-  font-size: 36px;
-  margin: 64px 16px 20px 16px;
-  padding-top: 64px;
+  font-size: 2.25rem;
+  padding: 35vw 0px 0px 1rem;
+}
+
+.episodios iframe {
+  width: 100%;
+  height: 232px;
+  max-width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2%;
+}
+
+@media screen and (min-width: 500px) {
+  .episodios h1 {
+    color: white;
+    font-family: 'ibm plex sans';
+    font-size: 3rem;
+    padding: 22vw 0px 1.4rem 13vw;
+  }
+  .episodios iframe {
+    width: 100vw;
+    height: 232px;
+    display: inline;
+    max-width: 584px;
+  }
 }
 
 .inicio .titulo {
@@ -160,7 +189,7 @@ header input:checked ~ ul {
   font-size: 1rem;
   border: none;
   padding: 0px;
-  margin: 29px 16px 20px 16px;
+  margin: 29px 16px 0px 16px;
   width: 288px;
   height: 48px;
 }
