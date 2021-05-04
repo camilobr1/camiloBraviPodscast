@@ -1,13 +1,19 @@
 .ultimas_novedades{
     background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     margin-top: 30px;
-    padding-top: 30px;
+    padding-bottom: 20vw;
+    padding-top: 15vw;
     clip-path: polygon(0 13%, 100% 1%, 100% 100%, 0% 100%);
-    width: 95%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     h1{
         color: white;
         font-family: 'ibm plex sans' ;
-        font-size: 36px; 
+        font-size: 2.25rem; 
         padding: 29px 0px 0px 16px ;
         letter-spacing: 0;
         text-align: center;
@@ -17,16 +23,26 @@
         background-color: #00F3BB;
         color: 060A24;
         font-family: 'ibm plex mono' ;
-        font-size: 16px;
+        font-size: 1rem;
         border: none;
         padding: 0px;
-        margin: 29px 16px 80px 16px ;
-        width: 90%;
+        margin: 29px 16px 0px 16px ;
+        width: 288px;
         height: 48px;
         &:hover{
             background: rgb(0,240,184);
             background: linear-gradient(90deg, rgba(0,240,184,1) 0%, rgba(0,0,254,1) 100%);
             color: white;
+        }
+
+    }
+    @media screen and( min-width: 500px){
+        h1{
+            font-size: 3rem;
+        }
+        button{
+            width: 345px;
+            height: 56px;
         }
 
     }

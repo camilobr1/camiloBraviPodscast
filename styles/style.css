@@ -123,8 +123,8 @@ header input:checked ~ ul {
 .episodios {
   width: 100%;
   background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 96%, 0 100%);
-          clip-path: polygon(0 10%, 100% 0%, 100% 96%, 0 100%);
+  -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0 100%);
+          clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0 100%);
   padding-bottom: 150px;
 }
 
@@ -148,6 +148,7 @@ header input:checked ~ ul {
       -ms-flex-align: center;
           align-items: center;
   margin: 2%;
+  padding-bottom: 15vw;
 }
 
 @media screen and (min-width: 500px) {
@@ -189,7 +190,7 @@ header input:checked ~ ul {
   font-size: 1rem;
   border: none;
   padding: 0px;
-  margin: 29px 16px 0px 16px;
+  margin: 36px 0px 24px 1rem;
   width: 288px;
   height: 48px;
 }
@@ -208,6 +209,9 @@ header input:checked ~ ul {
   .inicio .titulo {
     font-size: 4rem;
   }
+  .inicio button {
+    margin-top: 4vw;
+  }
 }
 
 .de_donde_venimos {
@@ -223,38 +227,102 @@ header input:checked ~ ul {
 .de_donde_venimos h1 {
   color: 060A24;
   font-family: 'ibm plex sans';
-  font-size: 36px;
-  margin: 29px 30px 0px 16px;
+  font-size: 2.25rem;
   line-height: 42px;
 }
 
 .de_donde_venimos p {
   color: 060A24;
   font-family: 'ibm plex mono';
-  font-size: 14px;
+  font-size: 1rem;
   letter-spacing: 0;
   line-height: 22px;
-  margin: 8px 16px 0px 16px;
+}
+
+@media screen and (min-width: 500px) {
+  .de_donde_venimos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .de_donde_venimos img {
+    max-width: 457.6px;
+    margin-top: -150px;
+  }
+  .de_donde_venimos div {
+    margin-top: 100px;
+  }
+  .de_donde_venimos div h1 {
+    font-size: 4rem;
+    margin-bottom: 3vw;
+  }
+  .de_donde_venimos div p {
+    max-width: 464px;
+  }
 }
 
 footer {
   text-align: center;
   font-family: 'ibm plex mono';
-  font-size: 14px;
+  font-size: 1rem;
   color: #060A24;
   letter-spacing: 0;
   line-height: 22px;
-  margin: 24px 16px 0px 16px;
-  width: 90%;
+  width: 100%;
+  height: 7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  margin-bottom: 1vw;
 }
 
 footer .redes {
-  margin: 16px 38px 31px 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media screen and (min-width: 500px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 10vw;
+  }
+  footer p {
+    margin-left: 7vw;
+  }
+  footer .redes {
+    width: 30%;
+    margin-right: 5%;
+  }
 }
 
 .invitados {
@@ -264,16 +332,42 @@ footer .redes {
 .invitados h1 {
   margin: 54px 16px 14px 16px;
   font-family: 'ibm plex sans';
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #060A24;
   letter-spacing: 0;
   line-height: 42px;
 }
 
-.invitados img {
-  max-width: 100%;
+.invitados div img {
+  width: 100%;
   margin: 0;
   display: block;
+}
+
+@media screen and (min-width: 500px) {
+  .invitados h1 {
+    font-size: 3rem;
+    margin-left: 14vw;
+    margin-bottom: 2.5vw;
+  }
+  .invitados div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .invitados div img {
+    max-width: 480px;
+    max-height: 364px;
+  }
 }
 
 .temas {
@@ -288,7 +382,34 @@ footer .redes {
   margin: 48px 16px 0px 16px;
 }
 
-.temas h2 {
+.temas nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5vw;
+}
+
+.temas nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temas nav div h2 {
   font-family: 'ibm plex sans';
   font-size: 24px;
   color: #060A24;
@@ -297,23 +418,46 @@ footer .redes {
   margin: 13px 16px 0px 16px;
 }
 
-.temas img {
-  margin: 65px 108px 0px 108px;
+@media screen and (min-width: 500px) {
+  .temas h1 {
+    font-size: 3rem;
+    margin-left: 14vw;
+  }
+  .temas nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .ultimas_novedades {
   background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   margin-top: 30px;
-  padding-top: 30px;
+  padding-bottom: 20vw;
+  padding-top: 15vw;
   -webkit-clip-path: polygon(0 13%, 100% 1%, 100% 100%, 0% 100%);
           clip-path: polygon(0 13%, 100% 1%, 100% 100%, 0% 100%);
-  width: 95%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ultimas_novedades h1 {
   color: white;
   font-family: 'ibm plex sans';
-  font-size: 36px;
+  font-size: 2.25rem;
   padding: 29px 0px 0px 16px;
   letter-spacing: 0;
   text-align: center;
@@ -323,11 +467,11 @@ footer .redes {
   background-color: #00F3BB;
   color: 060A24;
   font-family: 'ibm plex mono';
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   padding: 0px;
-  margin: 29px 16px 80px 16px;
-  width: 90%;
+  margin: 29px 16px 0px 16px;
+  width: 288px;
   height: 48px;
 }
 
@@ -336,6 +480,16 @@ footer .redes {
   background: -webkit-gradient(linear, left top, right top, from(#00f0b8), to(#0000fe));
   background: linear-gradient(90deg, #00f0b8 0%, #0000fe 100%);
   color: white;
+}
+
+@media screen and (min-width: 500px) {
+  .ultimas_novedades h1 {
+    font-size: 3rem;
+  }
+  .ultimas_novedades button {
+    width: 345px;
+    height: 56px;
+  }
 }
 
 ul {

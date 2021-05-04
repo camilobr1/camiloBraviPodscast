@@ -7,18 +7,34 @@
         font-size: 36px;
         margin: 48px 16px 0px 16px ;
     }
-    h2{
-        font-family: 'ibm plex sans';
-        font-size: 24px;
-        color: #060A24;
-        letter-spacing: 0;
-        text-align: center;
-        margin: 13px 16px 0px 16px ;
-
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vw;
+        div{
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+            h2{
+                font-family: 'ibm plex sans';
+                font-size: 24px;
+                color: #060A24;
+                letter-spacing: 0;
+                text-align: center;
+                margin: 13px 16px 0px 16px ;
+            }
+             
+        }   
     }
-    img{
-        margin: 65px 108px 0px 108px ;
-        
-    }
+    @media screen and( min-width: 500px){
+        h1{
+            font-size: 3rem;
+            margin-left: 14vw;
+        }
+        nav{
+            flex-direction: row;
 
+        }
+    }
 }

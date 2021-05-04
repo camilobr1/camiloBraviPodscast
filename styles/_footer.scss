@@ -1,16 +1,37 @@
 footer{
     text-align: center;
     font-family: 'ibm plex mono';
-        font-size: 14px;
-        color: #060A24;
-        letter-spacing: 0;
-        line-height: 22px;
-    margin: 24px 16px 0px 16px;
-    width: 90%;
+    font-size: 1rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    p{
+        margin-bottom: 1vw;
+        
+    }
 
     .redes{
-        margin: 16px 38px 31px 38px ;
         display: flex;
         justify-content: space-around;
+    }
+    @media screen and( min-width: 500px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 10vw;
+        p{
+            margin-left: 7vw;
+        }
+        .redes{
+            width: 30%;
+            margin-right: 5%;
+        }
     }
 }

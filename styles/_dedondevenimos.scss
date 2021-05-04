@@ -9,17 +9,42 @@
     h1{
         color: 060A24;
         font-family: 'ibm plex sans' ;
-        font-size: 36px;
-        margin: 29px 30px 0px 16px ;
+        font-size: 2.25rem;
+        
         line-height: 42px;
     }
     p{
 
         color: 060A24;
         font-family: 'ibm plex mono' ;
-        font-size: 14px;
+        font-size: 1rem;
         letter-spacing: 0;
         line-height: 22px;
-        margin: 8px 16px 0px 16px ;
+        
+    }
+    @media screen and( min-width: 500px){
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        img{
+            max-width: 457.6px;
+            margin-top: -150px;
+            
+            
+
+        }
+        div{
+            margin-top: 100px;
+            
+            
+            h1{
+                font-size: 4rem;
+                margin-bottom: 3vw;
+
+            }
+            p{
+                max-width: 464px;
+            }
+        }
     }
 }

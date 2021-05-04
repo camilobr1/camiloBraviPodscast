@@ -24,7 +24,7 @@
         font-size: 1rem;
         border: none;
         padding: 0px;
-        margin: 29px 16px 0px 16px ;
+        margin: 36px 0px 24px 1rem;
         width: 288px;
         height: 48px;
         
@@ -38,7 +38,9 @@
         margin: 4vw 0px 0px 14vw;
         .titulo{
             font-size: 4rem;
-
+        }
+        button{
+            margin-top: 4vw;
         }
     }
 }

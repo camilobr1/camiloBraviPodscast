@@ -11,18 +11,13 @@ ul{
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 5vw;
-    
-           
-               
+             
          li{
                 list-style: none;
-                
 
                 a{
                     text-decoration: none;
                     color: white;
-
-
                     &:hover{
                         color: #00F3BB;
                         text-decoration: line-through;
@@ -31,14 +26,9 @@ ul{
                         color: #060A24 ;
                         opacity: 56%;
                     }
-
-
-                    
                 }
-                
-                
             }
-        }
+}
     
 
  
