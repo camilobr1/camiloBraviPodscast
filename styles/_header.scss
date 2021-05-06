@@ -40,16 +40,23 @@ header{
         margin-right: 6vw;
     }
     
-    input:checked ~ .fa-bars{
+    input:checked ~ .barra{
         display: none;
     }
     
-    .fa-times{
+    .x{
         display: none;
     }
     
-    input:checked ~.fa-times{
-        display: block;
+    input:checked ~.x{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8vw;
+        height: 8vw;
+        max-width: 36px;
+        min-width: 36px;
+        margin-right: 6vw;
     }
     
     
