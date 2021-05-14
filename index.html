@@ -11,9 +11,7 @@
 </head>
 <body>
 
-    <!-----------------------------------------------------------------------------------------
-                                INICIO DEL HEADER
-    ------------------------------------------------------------------------------------------->
+    <!--    INICIO DEL HEADER   -->
 
 <header>
     <img src="./iconos/logo.svg" alt="logo">
@@ -21,7 +19,7 @@
     
     <input type="checkbox" id="checkbox" name="checkbox">   
     <label for="checkbox" class="barra"><i class="fas fa-bars" id="barra"></i></label>
-    <label for="checkbox" class="x"><i class="fas fa-times" id="x"></i></i></label>
+    <label for="checkbox" class="x"><i class="fas fa-times" id="x"></i></label>
     
     <ul class="items_menu">
         <li><a href="#episodios">EPISODIOS</a></li>
@@ -33,45 +31,36 @@
  </header>
         
 
-<!-----------------------------------------------------------------------------------------
-                                FIN DEL HEADER
-    ------------------------------------------------------------------------------------------->
+        <!--    FIN DEL HEADER   -->
+    
 
 <section>
-    <!-----------------------------------------------------------------------------------------
-                                INICIO DEL INICIO
-    ------------------------------------------------------------------------------------------->
+        <!--    INICIO DEL INICIO   -->
     <article class="inicio">
         <h1 class="titulo">Hello <s>world</s> pale blue dot.</h1>
         <p class="parrafo_titular">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días</p>
         <button> <strong> CONOCÉ MÁS </strong></button>
     
     </article> 
-    <!-----------------------------------------------------------------------------------------
-                                FIN DEL INICIO
-    ------------------------------------------------------------------------------------------->
+    <!--    FIN DEL INICIO   -->
     
-    <!-----------------------------------------------------------------------------------------
-                                INICIO DE EPISODIOS
-    ------------------------------------------------------------------------------------------->
+    <!--    INICIO DEL EPISODIOS   -->
     <article class="episodios" id="episodios">
-        <h1>Episodios</h1>
-        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe src="https://open.spotify.com/embed-podcast/episode/4Vy1F09rmp0UAlzxojaENc" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
-        
+        <h2>Episodios</h2>
+        <div class="contenedor_iframes">
+        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/4Vy1F09rmp0UAlzxojaENc" allow="encrypted-media"></iframe> 
+        </div>
     </article>
-     <!-----------------------------------------------------------------------------------------
-                                FIN DE EPISODIOS
-    ------------------------------------------------------------------------------------------->
-     <!-----------------------------------------------------------------------------------------
-                                INICIO DE DE DONDE VENIMOS
-    ------------------------------------------------------------------------------------------->
+     <!--    FIN DEL EPISODIOS   -->
+
+     <!--    INICIO DEL NOSOTROS   -->
     <article class="de_donde_venimos" id="nosotros">
         <img src="./imagenes/phone.png" alt="phone">
         <div>
-            <h1>De dónde venimos</h1>
+            <h2>De dónde venimos</h2>
             <p>Our posturing, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
                 <br>
                 <br>
@@ -79,82 +68,66 @@
             </p>
         </div>
     </article>
-        <!-----------------------------------------------------------------------------------------
-                                FIN DE DONDE VENIMOS
-    ------------------------------------------------------------------------------------------->
-        <!-----------------------------------------------------------------------------------------
-                                INICIO DE INVITADOS ESTELARES
-    ------------------------------------------------------------------------------------------->
+       <!--    FIN DEL NOSOTROS   -->
+
+       <!--    FIN DEL ENTREVISTAS   -->
     <article class="invitados" id="entrevistas">
-        <h1>Invitadas/os estelares</h1>
+        <h2>Invitadas/os estelares</h2>
         <div>
         <img src="./imagenes/grace-hopper.png" alt="img">
         <img src="./imagenes/Katie-Bouman.png" alt="img">
         <img src="./imagenes/Margaret_Hamilton.png" alt="img0">
-        <img src="./imagenes/An E.R.A.Univac 1103 computer in the 1950s.png" alt="img">
-        <img src="./imagenes/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="comp">
+        <img src="./imagenes/AnE.R.A.Univac1103computerinthe1950s.png" alt="img">
+        <img src="./imagenes/ComputeroperatorswithanEniac—theworld’sfirstprogrammablegeneral-purposecomputer.png" alt="comp">
         <img src="./imagenes/susan-kare.png" alt="img">
         </div>
     </article>
-    <!-----------------------------------------------------------------------------------------
-                                FIN DE INVITADOS ESTELARES
-    ------------------------------------------------------------------------------------------->
-    <!-----------------------------------------------------------------------------------------
-                                INICIO DE ALGUNOS DE NUESTROS TEMAS
-    ------------------------------------------------------------------------------------------->
+    <!--    FIN DEL ENTREVISTAS   -->
+
+    <!--    INICIO DEL INVITADOS   -->
 
     <article class="temas" id="topicos">
-        <h1>Algunos de nuestros temas</h1>
+        <h2>Algunos de nuestros temas</h2>
             <nav class="contenedor">
                 <div>   
                     <img src="./iconos/icon1.svg" alt="icono">
-                    <h2> <strong>Trabajo remoto</strong></h2>
+                    <h3> <strong>Trabajo remoto</strong></h3>
                 </div> 
                 <div> 
                     <img src="./iconos/icon2.svg" alt="img">
-                    <h2><strong>Repensando la programación</strong></h2>
+                    <h3><strong>Repensando la programación</strong></h3>
                 </div>
                 <div>
                     <img src="./iconos/icon3.svg" alt="img">
-                    <h2><strong>Bases del código</strong></h2>
+                    <h3><strong>Bases del código</strong></h3>
                 </div> 
                 <div> 
                     <img src="./iconos/icon4.svg" alt="img">
-                    <h2><strong>Seguridad informática</strong></h2>
+                    <h3><strong>Seguridad informática</strong></h3>
                 </div> 
             </nav>   
     </article>
-         <!-----------------------------------------------------------------------------------------
-                                FIN DE ALGUNOS DE NUESTROS TEMAS
-    ------------------------------------------------------------------------------------------->
-         <!-----------------------------------------------------------------------------------------
-                                INICIO DE NOVEDADES
-    ------------------------------------------------------------------------------------------->
+     <!--    FIN DEL INVITADOS   -->
+
+     <!--    INICIO DEL NOVEDADES   -->
     <article class="ultimas_novedades">
-        <h1>¿Querés las últimas novedades?</h1>
+        <h2>¿Querés las últimas novedades?</h2>
         <button> <strong> ESCUCHÁ LOS EPISODIOS</strong></button>
         
     </article>
-    <!-----------------------------------------------------------------------------------------
-                                FIN DE NOVEDADES
-    ------------------------------------------------------------------------------------------->
+    <!--    FIN DEL NOVEDADES  -->
 </section>
-    <!-----------------------------------------------------------------------------------------
-                                INICIO DE FOOTER
-    ------------------------------------------------------------------------------------------->
+    <!--    INICIO DEL FOOTER   -->
 <footer>
     <p> © 2019 - Hello blue pale dot</p> 
     <div class="redes">
-        <i class="fa fa-spotify" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-        <i class="fa fa-telegram" aria-hidden="true"></i>
+        <a href="https://open.spotify.com/user/11155034581?si=ab1815bf1aa74262" target="_blank"><i class="fa fa-spotify" aria-hidden="true"> </i></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/camilo.bravi.1" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="https://web.telegram.org/#/login" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
     </div>
 </footer>
- 
-    <!-----------------------------------------------------------------------------------------
-                                FIN DE FOOTER
-    ------------------------------------------------------------------------------------------->
+ <!--    FIN DEL FOOTER   -->
 </body>
 </html>

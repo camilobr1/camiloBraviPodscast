@@ -141,11 +141,26 @@ header input:checked ~ ul {
   padding-bottom: 150px;
 }
 
-.episodios h1 {
+.episodios h2 {
   color: white;
   font-family: 'ibm plex sans';
   font-size: 2.25rem;
-  padding: 35vw 0px 0px 1rem;
+  padding: 15vw 0px 0px 1rem;
+}
+
+.episodios .contenedor_iframes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 5vw;
 }
 
 .episodios iframe {
@@ -160,21 +175,21 @@ header input:checked ~ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2%;
-  padding-bottom: 15vw;
+  padding: 2vw;
+  border: 0px;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 500px) {
-  .episodios h1 {
+  .episodios h2 {
     color: white;
     font-family: 'ibm plex sans';
     font-size: 3rem;
-    padding: 22vw 0px 1.4rem 13vw;
+    padding: 15vw 0px 1.4rem 13vw;
   }
   .episodios iframe {
     width: 100vw;
     height: 232px;
-    display: inline;
     max-width: 584px;
   }
 }
@@ -238,7 +253,7 @@ header input:checked ~ ul {
   position: relative;
 }
 
-.de_donde_venimos h1 {
+.de_donde_venimos h2 {
   color: 060A24;
   font-family: 'ibm plex sans';
   font-size: 2.25rem;
@@ -271,7 +286,7 @@ header input:checked ~ ul {
   .de_donde_venimos div {
     margin-top: 100px;
   }
-  .de_donde_venimos div h1 {
+  .de_donde_venimos div h2 {
     font-size: 4rem;
     margin-bottom: 3vw;
   }
@@ -343,7 +358,7 @@ footer .redes {
   width: 100%;
 }
 
-.invitados h1 {
+.invitados h2 {
   margin: 54px 16px 14px 16px;
   font-family: 'ibm plex sans';
   font-size: 2.25rem;
@@ -359,12 +374,13 @@ footer .redes {
 }
 
 @media screen and (min-width: 500px) {
-  .invitados h1 {
+  .invitados h2 {
     font-size: 3rem;
     margin-left: 14vw;
     margin-bottom: 2.5vw;
   }
   .invitados div {
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -388,7 +404,7 @@ footer .redes {
   width: 100%;
 }
 
-.temas h1 {
+.temas h2 {
   color: 060A24;
   font-family: 'ibm plex sans';
   line-height: 42px;
@@ -407,6 +423,9 @@ footer .redes {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 5vw;
 }
 
@@ -423,7 +442,7 @@ footer .redes {
           align-items: center;
 }
 
-.temas nav div h2 {
+.temas nav div h3 {
   font-family: 'ibm plex sans';
   font-size: 24px;
   color: #060A24;
@@ -433,7 +452,7 @@ footer .redes {
 }
 
 @media screen and (min-width: 500px) {
-  .temas h1 {
+  .temas h2 {
     font-size: 3rem;
     margin-left: 14vw;
   }
@@ -468,7 +487,7 @@ footer .redes {
           align-items: center;
 }
 
-.ultimas_novedades h1 {
+.ultimas_novedades h2 {
   color: white;
   font-family: 'ibm plex sans';
   font-size: 2.25rem;
@@ -497,7 +516,7 @@ footer .redes {
 }
 
 @media screen and (min-width: 500px) {
-  .ultimas_novedades h1 {
+  .ultimas_novedades h2 {
     font-size: 3rem;
   }
   .ultimas_novedades button {

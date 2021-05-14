@@ -1,6 +1,6 @@
 .temas{
     width: 100%;
-    h1{
+    h2{
         color: 060A24;
         font-family: 'ibm plex sans' ;
         line-height: 42px;
@@ -11,12 +11,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin-top: 5vw;
         div{
             display: flex;
         flex-direction: column;
         align-items: center;
-            h2{
+            h3{
                 font-family: 'ibm plex sans';
                 font-size: 24px;
                 color: #060A24;
@@ -28,7 +29,7 @@
         }   
     }
     @media screen and( min-width: 500px){
-        h1{
+        h2{
             font-size: 3rem;
             margin-left: 14vw;
         }

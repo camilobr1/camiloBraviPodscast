@@ -5,12 +5,20 @@
     padding-bottom: 150px;
     
     
-    h1{
+    h2{
         color: white;
         font-family: 'ibm plex sans' ;
         font-size: 2.25rem;
-        padding: 35vw 0px 0px 1rem ;
+        padding: 15vw 0px 0px 1rem ;
         
+    }
+    
+    .contenedor_iframes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 5vw;
     }
     iframe{
         width: 100%;
@@ -19,26 +27,23 @@
         display: flex;
         align-content: center;
         align-items: center;
-        margin: 2%;
-        padding-bottom: 15vw;
-        
-        
-        
-        
+        padding: 2vw;
+        border: 0px;
+        background-color: transparent;    
     }
 
     @media screen and( min-width: 500px){
-        h1{
+        h2{
             color: white;
             font-family: 'ibm plex sans' ;
             font-size: 3rem;
-            padding: 22vw 0px 1.4rem 13vw ;
+            padding: 15vw 0px 1.4rem 13vw ;
             
         }
         iframe{
             width: 100vw;
             height: 232px;
-            display: inline;
+            
             max-width: 584px;
         } 
     }
